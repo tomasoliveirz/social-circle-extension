@@ -1,0 +1,7 @@
+node_modules
+.env
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Optional: ignore dist if built from src, but keeping it if it's the main artifact for now unless specified

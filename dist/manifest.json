@@ -1,0 +1,46 @@
+{
+   "action": {
+      "default_title": "Orbit",
+      "default_icon": {
+         "16": "icon16.png",
+         "32": "icon32.png",
+         "48": "icon48.png",
+         "128": "icon128.png"
+      }
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "description": "Identify and unfollow users who don't follow you back on Instagram. Safe and easy.",
+   "host_permissions": [
+      "https://*.instagram.com/*",
+      "https://api.gumroad.com/*"
+   ],
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png"
+   },
+   "manifest_version": 3,
+   "name": "Orbit - Social Circle Visualizer",
+   "permissions": [
+      "scripting",
+      "storage"
+   ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0",
+   "web_accessible_resources": [
+      {
+         "resources": [
+            "icon16.png",
+            "icon32.png",
+            "icon48.png",
+            "icon128.png"
+         ],
+         "matches": [
+            "https://*.instagram.com/*"
+         ]
+      }
+   ]
+}

@@ -1,0 +1,17 @@
+COMO INSTALAR A EXTENSÃO ORBIT (Versão Developer)
+
+1. Abra o Google Chrome.
+2. Na barra de endereço, digite: chrome://extensions
+3. No canto superior direito, ative o interruptor "Developer mode" (Modo de desenvolvedor).
+4. Clique no botão "Load unpacked" (Carregar sem compactação) no canto superior esquerdo.
+5. Navegue até a pasta deste projeto e selecione a pasta "dist":
+   
+   /home/tomio/.gemini/antigravity/scratch/instagram_extension/dist
+
+6. A extensão "Orbit" deve aparecer na sua lista.
+7. Abra o Instagram (www.instagram.com) e clique no ícone da extensão para testar!
+
+NOTA:
+- Esta versão ("dist") tem o código ofuscado para segurança (Anti-Hack).
+- Se quiser ver o código fonte original, olhe na pasta "src".
+- Para publicar na Chrome Web Store, use o arquivo ZIP na pasta "release".

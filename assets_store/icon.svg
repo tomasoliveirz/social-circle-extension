@@ -1,0 +1,36 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="instaCoreGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#405DE6" /> <stop offset="50%" stop-color="#C13584" /> <stop offset="100%" stop-color="#FCAF45" /> </linearGradient>
+
+        <filter id="coreGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+
+        <linearGradient id="glassSurface" x1="0" y1="0" x2="100%" y2="100%">
+            <stop offset="0" stop-color="white" stop-opacity="0.25"/>
+            <stop offset="1" stop-color="white" stop-opacity="0.02"/>
+        </linearGradient>
+    </defs>
+
+    <rect width="128" height="128" rx="30" fill="#0A0A0A" />
+    <rect x="1.5" y="1.5" width="125" height="125" rx="28.5" stroke="url(#instaCoreGrad)" stroke-width="1" stroke-opacity="0.3" fill="none"/>
+
+    <g transform="translate(64 64) rotate(-45)">
+        <path d="M -50 0 A 50 50 0 0 1 50 0" stroke="url(#instaCoreGrad)" stroke-width="4" stroke-linecap="round" opacity="0.5" />
+        <path d="M -50 0 A 50 50 0 0 0 50 0" stroke="url(#instaCoreGrad)" stroke-width="1" stroke-dasharray="4 6" opacity="0.3" />
+        <circle cx="50" cy="0" r="4" fill="#FCAF45" filter="blur(2px)" />
+    </g>
+
+    <g transform="translate(64 64)" filter="url(#coreGlow)">
+        <rect x="-22" y="-22" width="44" height="44" rx="12" stroke="url(#instaCoreGrad)" stroke-width="3.5" fill="url(#glassSurface)" fill-opacity="0.15" />
+
+        <circle cx="0" cy="0" r="10" stroke="url(#instaCoreGrad)" stroke-width="3.5" fill="none" />
+
+        <path d="M -5 -5 Q 0 -10 5 -5" stroke="white" stroke-width="1.5" opacity="0.6" stroke-linecap="round" fill="none" />
+
+        <circle cx="15" cy="-15" r="3.5" fill="#FCAF45" />
+    </g>
+</svg>
