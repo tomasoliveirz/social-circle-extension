@@ -293,7 +293,7 @@
 
                             <div class="orbit-footer">
                                 <span class="orbit-status" id="orbit-status">Ready</span>
-                                <span class="orbit-version">v2.0.0</span>
+                                <span class="orbit-version">v2.1.0</span>
                             </div>
                         </div>
                     </div>
@@ -434,7 +434,7 @@
                     <div class="orbit-paywall-title">Unlock Full List</div>
                     <div class="orbit-paywall-subtitle">View all non-followers, whitelist friends, and protect your account.</div>
                     <button class="orbit-btn-upgrade" id="orbit-trigger-buy">
-                        Get Orbit Pro - $5
+                        Get Orbit Pro
                     </button>
                     <a href="#" class="orbit-link-activate" id="orbit-trigger-activate">
                         Have a key? Activate
@@ -448,7 +448,7 @@
                 setTimeout(() => {
                     const buyBtn = div.querySelector('#orbit-trigger-buy');
                     const actBtn = div.querySelector('#orbit-trigger-activate');
-                    if (buyBtn) buyBtn.addEventListener('click', () => window.open('https://gumroad.com', '_blank'));
+                    if (buyBtn) buyBtn.addEventListener('click', () => window.open('https://orbittools.space/tools/orbit-social-circle', '_blank'));
                     if (actBtn) actBtn.addEventListener('click', (e) => {
                         e.preventDefault();
                         const key = prompt("Enter your License Key:");
